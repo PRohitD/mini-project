@@ -23,26 +23,27 @@ input::-webkit-inner-spin-button {
 <body>
     <!-- Nav bar-->
   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Barshikar Hostel Portal</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#hostel">Hostel</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mess">Mess</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-        </ul>
-      </div >
-      <button type="button" class="btn  shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#loginmodal"> Login </button>
-      <button type="button" class="btn  shadow-none ms-3" data-bs-toggle="modal" data-bs-target="#Registermodal"> Register </button>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>StudentStay</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav navbar-nav gap-5">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hostel">Hostel</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mess">Mess</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#">Library</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="#footer">Contact Us</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn  shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#loginmodal">
+          Login </button>
+        <button type="button" class="btn  shadow-none ms-3" data-bs-toggle="modal" data-bs-target="#Registermodal">
+          Register </button>
+      </div>
+    </nav>
 
   <!-- Modal 1-->
   <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -142,13 +143,25 @@ input::-webkit-inner-spin-button {
     </div>
   </div>
 
+  <section id="home">
+    <div class="col-lg-8">
+      <div class="hero-text">
+        <h1><strong>StudentStay</strong> a Trusted Platform</h1>
+        <p class="p1">Finding the right place to live while studying can be stressful — but not with us. StudentStay connects
+          students with safe, affordable, and comfortable accommodation options near their campuses. Whether you're
+          looking for a shared room, a private studio, or an entire apartment, we've got you covered.</p>
+  
+      </div>
+    </div>
+  </section>
+
   <section id="hostel" class="container mt-4">
     <div class="card">
       <img src="Assets/hostel.jpg" class="card-img-top" alt="Hostel Image">
       <div class="card-body">
         <h5 class="card-title">Barshikar Hostel</h5>
         <p class="card-text">Experience a comfortable stay with top-notch facilities.</p>
-        <h6>Facilities:</h6>
+        <!-- <h6>Facilities:</h6>
         <ul>
           <li>24/7 Security</li>
           <li>High-Speed WiFi</li>
@@ -161,7 +174,7 @@ input::-webkit-inner-spin-button {
           <li>Single Room - $500/month</li>
           <li>Double Room - $300/month per person</li>
           <li>Dormitory - $200/month per person</li>
-        </ul>
+        </ul> -->
         <!-- <h6>Payment Options:</h6>
                 <p>We accept Credit/Debit Cards, PayPal, and Bank Transfers.</p> -->
         <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
@@ -171,11 +184,11 @@ input::-webkit-inner-spin-button {
 
     <!-- Second Hostel Card -->
     <div class="card">
-      <img src="/Mini Project/Assets/hostel.jpg" class="card-img-top" alt="Hostel Image 2">
+      <img src="Assets/hostel.jpg" class="card-img-top" alt="Hostel Image 2">
       <div class="card-body">
         <h5 class="card-title">Ganga Hostel</h5>
         <p class="card-text">Modern accommodations with a welcoming atmosphere.</p>
-        <h6>Facilities:</h6>
+        <!-- <h6>Facilities:</h6>
         <ul>
           <li>24/7 Reception</li>
           <li>Complimentary Breakfast</li>
@@ -188,7 +201,7 @@ input::-webkit-inner-spin-button {
           <li>Single Room - $450/month</li>
           <li>Double Room - $350/month per person</li>
           <li>Dormitory - $250/month per person</li>
-        </ul>
+        </ul> -->
         <!-- <h6>Payment Options:</h6>
           <p>We accept Credit/Debit Cards, PayPal, and Cash Payments.</p> -->
         <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
@@ -198,11 +211,11 @@ input::-webkit-inner-spin-button {
 
     <!-- thrid Hostel Card -->
     <div class="card">
-      <img src="/Mini Project/Assets/hostel.jpg" class="card-img-top" alt="Hostel Image 2">
+      <img src="Assets/hostel.jpg" class="card-img-top" alt="Hostel Image 2">
       <div class="card-body">
         <h5 class="card-title">Govid Hostel</h5>
         <p class="card-text">Modern accommodations with a welcoming atmosphere.</p>
-        <h6>Facilities:</h6>
+        <!-- <h6>Facilities:</h6>
         <ul>
           <li>24/7 Reception</li>
           <li>Complimentary Breakfast</li>
@@ -215,7 +228,7 @@ input::-webkit-inner-spin-button {
           <li>Single Room - $450/month</li>
           <li>Double Room - $350/month per person</li>
           <li>Dormitory - $250/month per person</li>
-        </ul>
+        </ul> -->
         <!-- <h6>Payment Options:</h6>
           <p>We accept Credit/Debit Cards, PayPal, and Cash Payments.</p> -->
         <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
@@ -236,7 +249,7 @@ input::-webkit-inner-spin-button {
       <div class="card-body">
         <h5 class="card-title">MahaLaxmi Mess</h5>
         <p class="card-text">Modern accommodations with a welcoming atmosphere.</p>
-        <h6>Facilities:</h6>
+        <!-- <h6>Facilities:</h6>
         <ul>
           <li>Nutritious Meals</li>
           <li>Complimentary Breakfast</li>
@@ -249,7 +262,7 @@ input::-webkit-inner-spin-button {
           <li>Self-Service Mess - $4500/month</li>
           <li>No Self-Service - $3500/month per person</li>
           <li>Coupon-Based Mess- $2500/month per person</li>
-        </ul>
+        </ul> -->
         <!-- <h6>Payment Options:</h6>
           <p>We accept Credit/Debit Cards, PayPal, and Cash Payments.</p> -->
         <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
@@ -262,7 +275,7 @@ input::-webkit-inner-spin-button {
       <div class="card-body">
         <h5 class="card-title">Durva Mess</h5>
         <p class="card-text">Mess is not just a place to eat, it's where memories are made.</p>
-        <h6>Facilities:</h6>  
+        <!-- <h6>Facilities:</h6>  
         <ul>
           <li>Nutritious Meals</li>
           <li>Complimentary Breakfast</li>
@@ -275,7 +288,7 @@ input::-webkit-inner-spin-button {
           <li>Self-Service Mess - $4500/month</li>
           <li>No Self-Service - $3500/month per person</li>
           <li>Coupon-Based Mess- $2500/month per person</li>
-        </ul>
+        </ul> -->
         <!-- <h6>Payment Options:</h6>
           <p>We accept Credit/Debit Cards, PayPal, and Cash Payments.</p> -->
         <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
@@ -288,7 +301,7 @@ input::-webkit-inner-spin-button {
       <div class="card-body">
         <h5 class="card-title">Ganesh Mess</h5>
         <p class="card-text">A good mess feeds not just the body, but also the soul.</p>
-        <h6>Facilities:</h6>
+        <!-- <h6>Facilities:</h6>
         <ul>
           <li>Nutritious Meals</li>
           <li>Complimentary Breakfast</li>
@@ -301,13 +314,62 @@ input::-webkit-inner-spin-button {
           <li>Self-Service Mess - $4500/month</li>
           <li>No Self-Service - $3500/month per person</li>
           <li>Coupon-Based Mess- $2500/month per person</li>
-        </ul>
+        </ul> -->
         <!-- <h6>Payment Options:</h6>
           <p>We accept Credit/Debit Cards, PayPal, and Cash Payments.</p> -->
         <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
       </div>
     </div>
     </section>
+
+    <footer id="footer">
+      <div class="footpanel1">
+        Back to Top
+      </div>
+
+     <div class="foot-panel2">
+       <u>
+       <p> Get to Kmow Us</p>
+       <p>Careers</p>
+       <p>Contact Us</p>
+       <p>Email: support@studentstay.com</p>
+       </u>
+       <u>
+        <p> Get to Kmow Us</p>
+        <p>Careers</p>
+       <p>About Hostel</p> 
+        </u>
+        <u>
+          <p> Get to Kmow Us</p>
+          <p>Careers</p>
+          <p>About Mess</p>  
+          </u>
+          <u>
+            <p> Get to Kmow Us</p>
+            <p>Careers</p>
+            <p>About Libaray</p>   
+           
+            <p>Phone: +123 456 7890</p>
+            </u>
+               
+     </div>
+
+
+     <div class="footpanel3">
+      <div class="logo"></div>
+    </div>
+
+      <div class="footpanel4">
+        <div class="pages">
+          <a > condition of Use</a>
+          <a > Privacy Notice</a>
+          <a > Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyr">
+          <small>&copy; 2025 StudentStay. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
