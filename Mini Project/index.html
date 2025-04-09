@@ -10,79 +10,83 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="hostel.js" defer></script>
 
-<style>
+  <style>
     /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
   </style>
 </head>
 
 <body>
-    <!-- Nav bar-->
-  
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong>Student Stay</strong></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav navbar-nav gap-5">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#hostel">Hostel</a></li>
-            <li class="nav-item"><a class="nav-link" href="#mess">Mess</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#">Library</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="#footer">Contact Us</a></li>
-          </ul>
-        </div>
-        <button type="button" class="btn  shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#loginmodal">
-          Login </button>
-        <button type="button" class="btn  shadow-none ms-3" data-bs-toggle="modal" data-bs-target="#Registermodal">
-          Register </button>
+  <!-- Nav bar-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><strong>Student Stay</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav navbar-nav gap-5">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hostel">Hostel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mess">Mess</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">Library</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#footer">Contact Us</a></li>
+        </ul>
       </div>
-    </nav>
+      <button type="button" class="btn  shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#loginmodal">
+        Login </button>
+      <button type="button" class="btn  shadow-none ms-3" data-bs-toggle="modal" data-bs-target="#Registermodal">
+        Register </button>
+    </div>
+  </nav>
 
   <!-- Modal 1-->
-  <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    
+  <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
     <div class="modal-dialog">
       <form action="">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5 d-flex align-items-center" > <i class="bi bi-person-circle fs-3 me-3"></i>User Login</h1>
+            <h1 class="modal-title fs-5 d-flex align-items-center"> <i class="bi bi-person-circle fs-3 me-3"></i>User
+              Login</h1>
             <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="mb-3">
-              <label  class="form-label">Email address</label>
-              <input type="email" class="form-control shadow-none" >           
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control shadow-none">
             </div>
             <div class="mb-3">
-              <label  class="form-label">Password</label>
-              <input type="password" class="form-control shadow-none" >           
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control shadow-none">
             </div>
             <div class="d-flex align-items-center  justify-content-between mb-2">
-              <button type="submit" class=" btn1 bg-dark shadow-none  " >LOGIN</button>
+              <button type="submit" class=" btn1 bg-dark shadow-none  ">LOGIN</button>
               <a href="javascript: void(0)" class=" text-secondary text-decoration-none">forgot password?</a>
             </div>
           </div>
-      </form>    
-      </div>
+      </form>
     </div>
   </div>
+  </div>
 
-    
-     <!-- Modal 2-->
-  <div class="modal fade" id="Registermodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    
+
+  <!-- Modal 2-->
+  <div class="modal fade" id="Registermodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
     <div class="modal-dialog modal-lg">
       <form action="">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5 d-flex align-items-center" > <i class="bi bi-person-lines-fill fs-3 me-3"></i>User Registration</h1>
+            <h1 class="modal-title fs-5 d-flex align-items-center"> <i
+                class="bi bi-person-lines-fill fs-3 me-3"></i>User Registration</h1>
             <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -91,285 +95,442 @@ input::-webkit-inner-spin-button {
             </span>
             <div class="container2-fluid">
               <div class="row">
-                
+
                 <div class="col-md-6 ps-2 mb-3">
-                  <label  class="form-label">Name of student</label>
-                  <input type="text" class="form-control shadow-none" >  
+                  <label class="form-label">Name of student</label>
+                  <input type="text" class="form-control shadow-none">
                 </div>
                 <div class="col-md-6 ps-0 mb-3">
-                  <label  class="form-label">Email </label>
-                  <input type="email" class="form-control shadow-none" >  
+                  <label class="form-label">Email </label>
+                  <input type="email" class="form-control shadow-none">
                 </div>
 
                 <div class="col-md-6 ps-2 mb-3">
-                  <label  class="form-label">Phone Number</label>
-                  <input type="number" class="form-control shadow-none" >  
+                  <label class="form-label">Phone Number</label>
+                  <input type="number" class="form-control shadow-none">
                 </div>
                 <div class="col-md-6 ps-0 mb-3">
-                  <label  class="form-label">picture </label>
-                  <input type="file" class="form-control shadow-none" >  
+                  <label class="form-label">picture </label>
+                  <input type="file" class="form-control shadow-none">
                 </div>
                 <div class="col-md-12 ps-2 mb-3">
-                  <label  class="form-label">Address </label>
-                  <textarea class="form-control shadow-none " rows="1"></textarea>  
+                  <label class="form-label">Address </label>
+                  <textarea class="form-control shadow-none " rows="1"></textarea>
                 </div>
 
                 <div class="col-md-6 ps-2 mb-3">
-                  <label  class="form-label">Pincode</label>
-                  <input type="number" class="form-control shadow-none" >  
+                  <label class="form-label">Pincode</label>
+                  <input type="number" class="form-control shadow-none">
                 </div>
                 <div class="col-md-6 ps-0 mb-3">
-                  <label  class="form-label">Date of brith </label>
-                  <input type="date" class="form-control shadow-none" >  
+                  <label class="form-label">Date of brith </label>
+                  <input type="date" class="form-control shadow-none">
                 </div>
 
                 <div class="col-md-6 ps-2 mb-3">
-                  <label  class="form-label">Password</label>
-                  <input type="password" class="form-control shadow-none" >  
+                  <label class="form-label">Password</label>
+                  <input type="password" class="form-control shadow-none">
                 </div>
                 <div class="col-md-6 ps-0 mb-3">
-                  <label  class="form-label">Confrim Password </label>
-                  <input type="password" class="form-control shadow-none" >  
+                  <label class="form-label">Confrim Password </label>
+                  <input type="password" class="form-control shadow-none">
                 </div>
 
                 <div class="text-center my-1">
-                  <button type="submit" class=" btn1 bg-dark shadow-none  " >REGISTER</button>               
+                  <button type="submit" class=" btn1 bg-dark shadow-none  ">REGISTER</button>
                 </div>
               </div>
             </div>
           </div>
-      </form>    
-      </div>
+      </form>
     </div>
+  </div>
   </div>
 
   <section id="home">
     <div class="col-lg-8">
       <div class="hero-text">
         <h1><strong>StudentStay</strong> a Trusted Platform</h1>
-        <p class="p1">Finding the right place to live while studying can be stressful — but not with us. StudentStay connects
+        <p class="p1">Finding the right place to live while studying can be stressful — but not with us. StudentStay
+          connects
           students with safe, affordable, and comfortable accommodation options near their campuses. Whether you're
           looking for a shared room, a private studio, or an entire apartment, we've got you covered.</p>
-  
+
       </div>
     </div>
   </section>
 
-  <section id="hostel" class="container mt-4">
+  <!-- hostel -->
+  <h2 class="mt=5 pt-4 mb-4 text-center fw-bold ">OUR Hostel</h2>
+
+  <section id="hostel" class="container mt-2">
     <div class="card">
       <img src="Assets/hostel.jpg" class="card-img-top" alt="Hostel Image">
       <div class="card-body">
         <h5 class="card-title">Barshikar Hostel</h5>
         <p class="card-text">Experience a comfortable stay with top-notch facilities.</p>
-        <!-- <h6>Facilities:</h6>
-        <ul>
-          <li>24/7 Security</li>
-          <li>High-Speed WiFi</li>
-          <li>Gym & Sports Area</li>
-          <li>Mess with Multiple Cuisine Options</li>
-          <li>Study Rooms & Library Access</li>
-        </ul>
-        <h6>Rooms Available:</h6>
-        <ul>
-          <li>Single Room - $500/month</li>
-          <li>Double Room - $300/month per person</li>
-          <li>Dormitory - $200/month per person</li>
-        </ul> -->
-        <!-- <h6>Payment Options:</h6>
-                <p>We accept Credit/Debit Cards, PayPal, and Bank Transfers.</p> -->
-        <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
+        <h5>25000 per year</h5>
+        <div class="facilities mb-4">
+          <h6 class="mb-1">Facilities</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            24/7 Security
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            High-Speed WiFi
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Gym & Sports Area
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Study Rooms & Library Access
+          </span>
+        </div>
+        <div class="Features mb-4">
+          <h6 class="mb-1">Features</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Ac
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            solar panel
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Room heater
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Television
+          </span>
+        </div>      
+        <div class="rating mb-4">
+          <h6 class="mb-1">Rating</h6>
+          <span class="badge rounded-pill bg-light">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </span>
+        </div>
+        <div class="d-flex justify-content-evenly mb-2">
+          <a href="#" class="btn1 btn-sm text-white bg-dark shadow-none ">Book Now</a>
+          <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
+        </div>
       </div>
     </div>
 
 
-    <!-- Second Hostel Card -->
+     <!-- Second Hostel Card -->
     <div class="card">
-      <img src="Assets/hostel.jpg" class="card-img-top" alt="Hostel Image 2">
+      <img src="Assets/hostel.jpg" class="card-img-top" alt="Hostel Image">
       <div class="card-body">
         <h5 class="card-title">Ganga Hostel</h5>
-        <p class="card-text">Modern accommodations with a welcoming atmosphere.</p>
-        <!-- <h6>Facilities:</h6>
-        <ul>
-          <li>24/7 Reception</li>
-          <li>Complimentary Breakfast</li>
-          <li>Shared Lounge Area</li>
-          <li>Laundry Service</li>
-          <li>Free Parking</li>
-        </ul>
-        <h6>Rooms Available:</h6>
-        <ul>
-          <li>Single Room - $450/month</li>
-          <li>Double Room - $350/month per person</li>
-          <li>Dormitory - $250/month per person</li>
-        </ul> -->
-        <!-- <h6>Payment Options:</h6>
-          <p>We accept Credit/Debit Cards, PayPal, and Cash Payments.</p> -->
-        <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
+        <p class="card-text">Experience a comfortable stay with top-notch facilities.</p>
+        <h5>17000 per year</h5>
+        <div class="facilities mb-4">
+          <h6 class="mb-1">Facilities</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            24/7 Security
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            High-Speed WiFi
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Gym & Sports Area
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Study Rooms & Library Access
+          </span>
+        </div>
+        <div class="Features mb-4">
+          <h6 class="mb-1">Features</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Ac
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            solar panel
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Room heater
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Television
+          </span>
+        </div>
+        
+        <div class="rating mb-4">
+          <h6 class="mb-1">Rating</h6>
+          <span class="badge rounded-pill bg-light">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </span>
+        </div>
+        <div class="d-flex justify-content-evenly mb-2">
+          <a href="#" class="btn1 btn-sm text-white bg-dark shadow-none ">Book Now</a>
+          <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
+        </div>
       </div>
     </div>
-
 
     <!-- thrid Hostel Card -->
-    <div class="card">
-      <img src="Assets/hostel.jpg" class="card-img-top" alt="Hostel Image 2">
+     <div class="card">
+      <img src="Assets/hostel.jpg" class="card-img-top" alt="Hostel Image">
       <div class="card-body">
         <h5 class="card-title">Govid Hostel</h5>
-        <p class="card-text">Modern accommodations with a welcoming atmosphere.</p>
-        <!-- <h6>Facilities:</h6>
-        <ul>
-          <li>24/7 Reception</li>
-          <li>Complimentary Breakfast</li>
-          <li>Shared Lounge Area</li>
-          <li>Laundry Service</li>
-          <li>Free Parking</li>
-        </ul>
-        <h6>Rooms Available:</h6>
-        <ul>
-          <li>Single Room - $450/month</li>
-          <li>Double Room - $350/month per person</li>
-          <li>Dormitory - $250/month per person</li>
-        </ul> -->
-        <!-- <h6>Payment Options:</h6>
-          <p>We accept Credit/Debit Cards, PayPal, and Cash Payments.</p> -->
-        <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
+        <p class="card-text">Experience a comfortable stay with top-notch facilities.</p>
+        <h5>13000 per year</h5>
+        <div class="facilities mb-4">
+          <h6 class="mb-1">Facilities</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            24/7 Security
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            High-Speed WiFi
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Gym & Sports Area
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Study Rooms & Library Access
+          </span>
+        </div>
+        <div class="Features mb-4">
+          <h6 class="mb-1">Features</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Ac
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            solar panel
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Room heater
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Television
+          </span>
+        </div>
+        
+        <div class="rating mb-4">
+          <h6 class="mb-1">Rating</h6>
+          <span class="badge rounded-pill bg-light">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </span>
+        </div>
+        <div class="d-flex justify-content-evenly mb-2">
+          <a href="#" class="btn1 btn-sm text-white bg-dark shadow-none ">Book Now</a>
+          <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
+        </div>
       </div>
-    </div>
-
+    </div> 
   </section>
 
-
-
+  <h2 class="mt=5 pt-4 mb-0 text-center fw-bold ">OUR Mess</h2>
 
 
   <section id="mess" class="container">
 
-    <!-- First mace card -->
+    <!-- First mess card -->
     <div class="card">
-      <img src="Assets/mess1.png" class="card-img-top" alt="Hostel Image 2">
+      <img src="Assets/mess1.png" class="card-img-top" alt="Hostel Image">
       <div class="card-body">
-        <h5 class="card-title">MahaLaxmi Mess</h5>
-        <p class="card-text">Modern accommodations with a welcoming atmosphere.</p>
-        <!-- <h6>Facilities:</h6>
-        <ul>
-          <li>Nutritious Meals</li>
-          <li>Complimentary Breakfast</li>
-          <li>Vegetarian / Non-Vegetarian Options </li>
-          <li>Hygienic Cooking Environment </li>
-          <li>Clean Dining Area</li>
-        </ul>
-        <h6>Service Available:</h6>
-        <ul>
-          <li>Self-Service Mess - $4500/month</li>
-          <li>No Self-Service - $3500/month per person</li>
-          <li>Coupon-Based Mess- $2500/month per person</li>
-        </ul> -->
-        <!-- <h6>Payment Options:</h6>
-          <p>We accept Credit/Debit Cards, PayPal, and Cash Payments.</p> -->
-        <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
+        <h5 class="card-title">Mahlakshami Mess</h5>
+        <p class="card-text">Experience a comfortable stay with top-notch facilities.</p>
+        <h5>$2400 per month</h5>
+        <div class="facilities mb-4">
+          <h6 class="mb-1">Facilities</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Dining Area
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Kitchen Facilities
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Food Services
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Cleanliness & Hygiene
+          </span>
+        </div>
+        <div class="Features mb-4">
+          <h6 class="mb-1">Features</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Trained Staff
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Safety Measures
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Filtered Drinking Water
+          </span>
+        </div>
+        
+        <div class="rating mb-4">
+          <h6 class="mb-1">Rating</h6>
+          <span class="badge rounded-pill bg-light">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </span>
+        </div>
+        <div class="d-flex justify-content-evenly mb-2">
+          <a href="#" class="btn1 btn-sm text-white bg-dark shadow-none ">Book Now</a>
+          <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
+        </div>
       </div>
-    </div>
+    </div> 
 
-    <!-- second mess card -->
     <div class="card">
-      <img src="Assets/mess1.png" class="card-img-top" alt="Hostel Image 2">
+      <img src="Assets/mess1.png" class="card-img-top" alt="Hostel Image">
       <div class="card-body">
         <h5 class="card-title">Durva Mess</h5>
-        <p class="card-text">Mess is not just a place to eat, it's where memories are made.</p>
-        <!-- <h6>Facilities:</h6>  
-        <ul>
-          <li>Nutritious Meals</li>
-          <li>Complimentary Breakfast</li>
-          <li>Vegetarian / Non-Vegetarian Options </li>
-          <li>Hygienic Cooking Environment </li>
-          <li>Clean Dining Area</li>
-        </ul>
-        <h6>Service Available:</h6>
-        <ul>
-          <li>Self-Service Mess - $4500/month</li>
-          <li>No Self-Service - $3500/month per person</li>
-          <li>Coupon-Based Mess- $2500/month per person</li>
-        </ul> -->
-        <!-- <h6>Payment Options:</h6>
-          <p>We accept Credit/Debit Cards, PayPal, and Cash Payments.</p> -->
-        <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
+        <p class="card-text">Experience a comfortable stay with top-notch facilities.</p>
+        <h5>$2500 per month</h5>
+        <div class="facilities mb-4">
+          <h6 class="mb-1">Facilities</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Dining Area
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Kitchen Facilities
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Food Services
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Cleanliness & Hygiene
+          </span>
+        </div>
+        <div class="Features mb-4">
+          <h6 class="mb-1">Features</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Trained Staff
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Safety Measures
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Filtered Drinking Water
+          </span>
+        </div>
+        
+        <div class="rating mb-4">
+          <h6 class="mb-1">Rating</h6>
+          <span class="badge rounded-pill bg-light">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </span>
+        </div>
+        <div class="d-flex justify-content-evenly mb-2">
+          <a href="#" class="btn1 btn-sm text-white bg-dark shadow-none ">Book Now</a>
+          <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
+        </div>
       </div>
-    </div>
+    </div> 
 
-    <!-- Third mess card -->
     <div class="card">
-      <img src="Assets/mess3.png" class="card-img-top" alt="Hostel Image 2" style="height: 100%;">
+      <img src="Assets/mess1.png" class="card-img-top" alt="Hostel Image">
       <div class="card-body">
         <h5 class="card-title">Ganesh Mess</h5>
-        <p class="card-text">A good mess feeds not just the body, but also the soul.</p>
-        <!-- <h6>Facilities:</h6>
-        <ul>
-          <li>Nutritious Meals</li>
-          <li>Complimentary Breakfast</li>
-          <li>Vegetarian / Non-Vegetarian Options </li>
-          <li>Hygienic Cooking Environment </li>
-          <li>Clean Dining Area</li>
-        </ul>
-        <h6>Service Available:</h6>
-        <ul>
-          <li>Self-Service Mess - $4500/month</li>
-          <li>No Self-Service - $3500/month per person</li>
-          <li>Coupon-Based Mess- $2500/month per person</li>
-        </ul> -->
-        <!-- <h6>Payment Options:</h6>
-          <p>We accept Credit/Debit Cards, PayPal, and Cash Payments.</p> -->
-        <button class="btn btn-primary" onclick="bookRoom()">Book Now</button>
+        <p class="card-text">Experience a comfortable stay with top-notch facilities.</p>
+        <h5>$2500 per month</h5>
+        <div class="facilities mb-4">
+          <h6 class="mb-1">Facilities</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Dining Area
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Kitchen Facilities
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Food Services
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Cleanliness & Hygiene
+          </span>
+        </div>
+        <div class="Features mb-4">
+          <h6 class="mb-1">Features</h6>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Trained Staff
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Safety Measures
+          </span>
+          <span class="badge rounded-pill bg-light text-dark text-wrap">
+            Filtered Drinking Water
+          </span>
+        </div>
+        
+        <div class="rating mb-4">
+          <h6 class="mb-1">Rating</h6>
+          <span class="badge rounded-pill bg-light">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </span>
+        </div>
+        <div class="d-flex justify-content-evenly mb-2">
+          <a href="#" class="btn1 btn-sm text-white bg-dark shadow-none ">Book Now</a>
+          <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
+        </div>
       </div>
-    </div>
+    </div> 
     </section>
 
-    <footer id="footer">
-      <div class="footpanel1">
-        Back to Top
-      </div>
+  <footer id="footer">
+    <div class="footpanel1">
+      Back to Top
+    </div>
 
-     <div class="foot-panel2">
-       <u>
-       <p> Get to Kmow Us</p>
-       <p>Careers</p>
-       <p>Contact Us</p>
-       <p>Email: support@studentstay.com</p>
-       </u>
-       <u>
+    <div class="foot-panel2">
+      <u>
         <p> Get to Kmow Us</p>
         <p>Careers</p>
-       <p>About Hostel</p> 
-        </u>
-        <u>
-          <p> Get to Kmow Us</p>
-          <p>Careers</p>
-          <p>About Mess</p>  
-          </u>
-          <u>
-            <p> Get to Kmow Us</p>
-            <p>Careers</p>
-            <p>About Libaray</p>   
-           
-            <p>Phone: +123 456 7890</p>
-            </u>
-               
-     </div>
+        <p>Contact Us</p>
+        <p>Email: support@studentstay.com</p>
+      </u>
+      <u>
+        <p> Get to Kmow Us</p>
+        <p>Careers</p>
+        <p>About Hostel</p>
+      </u>
+      <u>
+        <p> Get to Kmow Us</p>
+        <p>Careers</p>
+        <p>About Mess</p>
+      </u>
+      <u>
+        <p> Get to Kmow Us</p>
+        <p>Careers</p>
+        <p>About Libaray</p>
+
+        <p>Phone: +123 456 7890</p>
+      </u>
+
+    </div>
 
 
-     <div class="footpanel3">
+    <div class="footpanel3">
       <div class="logo"></div>
     </div>
 
-      <div class="footpanel4">
-        <div class="pages">
-          <a > condition of Use</a>
-          <a > Privacy Notice</a>
-          <a > Your Ads Privacy Choices</a>
-        </div>
-        <div class="copyr">
-          <small>&copy; 2025 StudentStay. All rights reserved.</small>
-        </div>
+    <div class="footpanel4">
+      <div class="pages">
+        <a> condition of Use</a>
+        <a> Privacy Notice</a>
+        <a> Your Ads Privacy Choices</a>
       </div>
-    </footer>
+      <div class="copyr">
+        <small>&copy; 2025 StudentStay. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
