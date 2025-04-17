@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - Hostel Management</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>🏨 Hostel Management - Admin Panel</h1>
+
+    <!-- Shutdown toggle with label -->
+  <div class="shutdown-container ">
+    <span class="toggle-label ">Shutdown Website</span>
+    <label class="switch">
+      <input type="checkbox" id="shutdownToggle" onchange="toggleShutdown()" />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <div class="dashboard">
+
+    <div class="card">
+      <h2>➕ Add Rooms</h2>
+      <p>Admin can add rooms on the website.</p>
+     
+      <form id="roomForm">
+        <input type="text" id="roomNumber" placeholder="Room Number" required /><br />
+        <input type="text" id="roomType" placeholder="Room Type (Single/Double)" required /><br />
+        <input type="text" id="floorNumber" placeholder="Room Type (ground flooer/1st flooer/2nd flooer )" required /><br />
+        <input type="number" id="roomPrice" placeholder="Room Price (per month)" required /><br />
+        <button type="submit" onclick="addRoom()">Add Room</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>📋 View Registered Students</h2>
+      <p>See the list of all registered students.</p>
+      <button onclick="alert('This will show student records')">View Students</button>
+    </div>
+    <div class="card">
+      <h2>➕Add New Student</h2>
+      <p>Add a new student to the system.</p>
+      <button onclick="alert('This will show add student form')">Add Student</button>
+    </div>
+    <div class="card">
+      <h2>❌ Remove Student</h2>
+      <p>Remove a student record from the system.</p>
+      <button onclick="alert('This will show remove student form')">Remove Student</button>
+    </div>
+  </div>
+  
+  <script src="admin.js"></script>  
+</body>
+</html>

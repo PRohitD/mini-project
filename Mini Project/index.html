@@ -11,16 +11,31 @@
   <script src="hostel.js" defer></script>
 
   <style>
+
+    /*Overlay that blocks all interaction */
+      #blocker {
+       position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.6);
+      z-index: 999;
+    }   
+    
+    
     /* Chrome, Safari, Edge, Opera */
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
       -webkit-appearance: none;
       margin: 0;
     }
+
   </style>
 </head>
 
 <body>
+  <div id="blocker"></div>
   <!-- Nav bar-->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
@@ -34,8 +49,8 @@
           <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#hostel">Hostel</a></li>
           <li class="nav-item"><a class="nav-link" href="#mess">Mess</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="#">Library</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="#footer">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact Us">Contact Us</a></li>
+         <li class="nav-item"><a class="nav-link" href="/Mini Project/Admin/adminlogin.html">Admin Login</a></li> 
         </ul>
       </div>
       <button type="button" class="btn  shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#loginmodal">
@@ -66,8 +81,8 @@
               <label class="form-label">Password</label>
               <input type="password" class="form-control shadow-none">
             </div>
-            <div class="d-flex align-items-center  justify-content-between mb-2">
-              <button type="submit" class=" btn1 bg-dark shadow-none  ">LOGIN</button>
+            <div class="d-flex align-items-center  justify-content-between mb-2" >
+              <button type="submit" class=" btn1 bg-dark shadow-none  " >LOGIN</button>
               <a href="javascript: void(0)" class=" text-secondary text-decoration-none">forgot password?</a>
             </div>
           </div>
@@ -199,7 +214,7 @@
           <span class="badge rounded-pill bg-light text-dark text-wrap">
             Television
           </span>
-        </div>      
+        </div>
         <div class="rating mb-4">
           <h6 class="mb-1">Rating</h6>
           <span class="badge rounded-pill bg-light">
@@ -210,14 +225,14 @@
           </span>
         </div>
         <div class="d-flex justify-content-evenly mb-2">
-          <a href="#" class="btn1 btn-sm text-white bg-dark shadow-none ">Book Now</a>
+          <a href="roomList.html" class="btn1 btn-sm text-white bg-dark shadow-none ">Book Now</a>
           <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
         </div>
       </div>
     </div>
 
 
-     <!-- Second Hostel Card -->
+    <!-- Second Hostel Card -->
     <div class="card">
       <img src="Assets/hostel.jpg" class="card-img-top" alt="Hostel Image">
       <div class="card-body">
@@ -254,7 +269,7 @@
             Television
           </span>
         </div>
-        
+
         <div class="rating mb-4">
           <h6 class="mb-1">Rating</h6>
           <span class="badge rounded-pill bg-light">
@@ -272,7 +287,7 @@
     </div>
 
     <!-- thrid Hostel Card -->
-     <div class="card">
+    <div class="card">
       <img src="Assets/hostel.jpg" class="card-img-top" alt="Hostel Image">
       <div class="card-body">
         <h5 class="card-title">Govid Hostel</h5>
@@ -308,7 +323,7 @@
             Television
           </span>
         </div>
-        
+
         <div class="rating mb-4">
           <h6 class="mb-1">Rating</h6>
           <span class="badge rounded-pill bg-light">
@@ -323,14 +338,12 @@
           <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
         </div>
       </div>
-    </div> 
+    </div>
   </section>
 
-  <h2 class="mt=5 pt-4 mb-0 text-center fw-bold ">OUR Mess</h2>
-
-
-  <section id="mess" class="container">
-
+  <h2 class="mt=5 pt-4 mb-0 text-center fw-bold " id="mess">OUR Mess</h2>
+  <section  class="container">
+    
     <!-- First mess card -->
     <div class="card">
       <img src="Assets/mess1.png" class="card-img-top" alt="Hostel Image">
@@ -365,7 +378,7 @@
             Filtered Drinking Water
           </span>
         </div>
-        
+
         <div class="rating mb-4">
           <h6 class="mb-1">Rating</h6>
           <span class="badge rounded-pill bg-light">
@@ -380,7 +393,7 @@
           <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
         </div>
       </div>
-    </div> 
+    </div>
 
     <div class="card">
       <img src="Assets/mess1.png" class="card-img-top" alt="Hostel Image">
@@ -415,7 +428,7 @@
             Filtered Drinking Water
           </span>
         </div>
-        
+
         <div class="rating mb-4">
           <h6 class="mb-1">Rating</h6>
           <span class="badge rounded-pill bg-light">
@@ -430,7 +443,7 @@
           <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
         </div>
       </div>
-    </div> 
+    </div>
 
     <div class="card">
       <img src="Assets/mess1.png" class="card-img-top" alt="Hostel Image">
@@ -465,7 +478,7 @@
             Filtered Drinking Water
           </span>
         </div>
-        
+
         <div class="rating mb-4">
           <h6 class="mb-1">Rating</h6>
           <span class="badge rounded-pill bg-light">
@@ -480,8 +493,85 @@
           <a href="#" class="btn btn-sm btn-outline-dark  shadow-none ">More Details</a>
         </div>
       </div>
-    </div> 
-    </section>
+    </div>
+  </section>
+
+  <section id="contact Us">
+    <div class="my-1 px-1">
+      <h2 class="fw-bold h-font text-center text-center">CONTACT US</h2>
+      <div class="h-line bg-dark"></div>
+      <p class="text-center mt-0"> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quae quis, maxime
+        repellendus
+        dignissimos molestias officiis culpa autem explicabo?</p>
+    </div>
+
+    <div class="container-fluid px-5">
+      <div class="row justify-content-center align-items-start">
+        <!-- Column 1: Map + Contact Info -->
+        <div class="col-xl-5 col-lg-6 col-md-6 mb-3 px-3">
+          <div class="bg-white rounded shadow p-3">
+            <iframe class="w-100 rounded mb-4" height="300"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.454567634933!2d74.2599139094763!3d16.654121284047086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc0ffb509926fa9%3A0x9af43eb75ec2804!2sKIT&#39;s%20College%20of%20Engineering%20Kolhapur%20(Empowered%20Autonomous)!5e0!3m2!1sen!2sin!4v1744221387394!5m2!1sen!2sin"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            <h5>Address</h5>
+            <a href="https://maps.app.goo.gl/QLnjGoxbitheiGVFA" target="_blank"
+              class="d-inline-block text-dark mb-1 text-decoration-none">
+              <i class="bi bi-geo-alt-fill"></i>
+              Barshikar Boys Hostel Near KIT College Kolhapur
+            </a>
+    
+            <h5 class="mt-3">Call us</h5>
+            <a href="tel:+9163874645" class="d-inline-block mb-2 text-decoration-none text-dark">
+              <i class="bi bi-telephone-fill"></i> +91 63874645
+            </a>
+            <br>
+            <a href="tel:+9163874645" class="d-inline-block mb-2 text-decoration-none text-dark">
+              <i class="bi bi-telephone-fill"></i> +91 63874645
+            </a>
+    
+            <h5 class="mt-3">Email</h5>
+            <a href="mailto:ask.tjwebdev@gmail.com" class="d-inline-block me-2 text-decoration-none text-dark">
+              <i class="bi bi-envelope-fill"></i> ask.tjwebdev@gmail.com
+            </a>
+    
+            <h5 class="mt-3">Follow us</h5>
+            <a href="#" class="d-inline-block text-dark fs-5 me-2">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="d-inline-block  text-dark fs-5 me-2">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="d-inline-block  text-dark fs-5">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Column 2: Contact Form -->
+        <div class="col-xl-5 col-lg-6 col-md-6 mb-4 px-3">
+          <div class="bg-white rounded shadow p-5">
+            <h5 class="mb-4">Send us a message</h5>
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="6" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark px-4 py-2 ">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+
 
   <footer id="footer">
     <div class="footpanel1">
@@ -532,7 +622,25 @@
     </div>
   </footer>
 
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const isShutdown = localStorage.getItem("shutdown") === "true";
+
+  if (isShutdown) {
+    document.body.innerHTML = `
+      <div style="text-align: center; margin-top: 100px;">
+        <h1 style="color: red;">🚫 The Hostel Management System is currently shut down by the admin.</h1>
+        <p>Please check back later.</p>
+      </div>
+    `;
+  }
+});
+
+  </script>
 </body>
 
 </html>

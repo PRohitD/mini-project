@@ -138,7 +138,9 @@ html, body {
     
   }
 
-  
+  .h-font,p {
+    font-family: 'Times New Roman', Times, serif;
+  }
   
   .btn:hover {
     background-color: #0056b3;
@@ -202,4 +204,6 @@ u p{
   text-align: center;
   font-size: 0.85rem;
 }  
+
+
 
