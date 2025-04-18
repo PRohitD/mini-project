@@ -12,7 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //  if (isLoggedIn === "true") {
 //    // Remove blocker if user is logged in
+<<<<<<< HEAD
 //    blocker.style.display = "none";
+=======
+// //    blocker.style.display = "none";
+
+// "niranjanmali20531@gmail.com"
+>>>>>>> a8ffaacc4ad6270946e727d686dca2d3a6b46223
 //  }
 
 
