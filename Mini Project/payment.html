@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Room Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .payment-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .payment-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .payment-box p {
+      margin: 10px 0;
+    }
+
+    .pay-options button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 8px;
+      background: #48bb78;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .pay-options button:hover {
+      background: #38a169;
+    }
+  </style>
+</head>
+<body>
+  <div class="payment-box">
+    <h2>💳 Room Payment</h2>
+    <div id="paymentDetails"></div>
+    <div class="pay-options">
+      <button onclick="completePayment()">Pay Now</button>
+    </div>
+  </div>
+
+  <script>
+    const paymentData = JSON.parse(localStorage.getItem("paymentRoom"));
+
+    if (!paymentData) {
+      document.body.innerHTML = "<h2>❌ No payment information found!</h2>";
+    } else {
+      document.getElementById("paymentDetails").innerHTML = `
+        <p><strong>Room Number:</strong> ${paymentData.roomNumber}</p>
+        <p><strong>Amount:</strong> ₹${paymentData.price}</p>
+      `;
+    }
+
+    function completePayment() {
+      alert("✅ Payment Successful! Thank you.");
+      localStorage.removeItem("paymentRoom");
+      window.location.href = "roomList.html"; // Back to available rooms
+    }
+  </script>
+</body>
+</html>

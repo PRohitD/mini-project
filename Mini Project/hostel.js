@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
  //Only allow access if logged in
- const isLoggedIn = localStorage.getItem("isLoggedIn");
- const blocker = document.getElementById("blocker");
+//  const isLoggedIn = localStorage.getItem("isLoggedIn");
+//  const blocker = document.getElementById("blocker");
 
- if (isLoggedIn === "true") {
-   // Remove blocker if user is logged in
-   blocker.style.display = "none";
- }
+//  if (isLoggedIn === "true") {
+//    // Remove blocker if user is logged in
+//    blocker.style.display = "none";
+//  }
 
 
 

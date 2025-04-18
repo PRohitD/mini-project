@@ -71,6 +71,13 @@
       background-color: #a0aec0;
       cursor: not-allowed;
     }
+
+    .message {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #e53e3e;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
@@ -84,10 +91,10 @@
   </div>
 
   <script>
-    // Simulate a logged in user (in real case, set this at login)
+    // Simulate a logged in user (in real case, this would be set after login)
     localStorage.setItem("loggedInUser", "user@example.com");
 
-    // Sample rooms (for demo purpose, only if no data already exists)
+    // Sample rooms if not already present in localStorage
     if (!localStorage.getItem("rooms")) {
       const sampleRooms = [
         { number: "101", type: "Single", price: "5000", booked: false },
@@ -97,10 +104,18 @@
       localStorage.setItem("rooms", JSON.stringify(sampleRooms));
     }
 
-    // Display rooms
+    // Display available rooms
     function loadRooms() {
       const roomDisplay = document.getElementById("roomDisplay");
       const rooms = JSON.parse(localStorage.getItem("rooms")) || [];
+      const currentUser = localStorage.getItem("loggedInUser") || "guest";
+
+      // Shutdown mode check
+      const shutdown = localStorage.getItem("shutdown") === "true";
+      if (shutdown) {
+        roomDisplay.innerHTML = "<div class='message'>⚠️ The hostel system is currently shut down by admin.</div>";
+        return;
+      }
 
       if (rooms.length === 0) {
         roomDisplay.innerHTML = "<p>No rooms available at the moment.</p>";
@@ -109,15 +124,20 @@
 
       roomDisplay.innerHTML = rooms.map((room, index) => {
         const isBooked = room.booked;
+        const paymentButton = isBooked && room.bookedBy === currentUser
+          ? `<button onclick="goToPayment('${room.number}', '${room.price}')">Proceed to Payment</button>`
+          : "";
+
         return `
           <div class="room-card">
             <h3>Room ${room.number}</h3>
             <p><strong>Type:</strong> ${room.type}</p>
             <p><strong>Price:</strong> ₹${room.price}/month</p>
             <p><strong>Status:</strong> ${isBooked ? "Booked" : "Available"}</p>
-            <button onclick="bookRoom(${index})" ${isBooked ? "disabled" : ""}>
-              ${isBooked ? "Booked" : "Book Now"}
-            </button>
+            ${!isBooked 
+              ? `<button onclick="bookRoom(${index})">Book Now</button>` 
+              : `<button disabled>Booked</button>`}
+            ${paymentButton}
           </div>
         `;
       }).join("");
@@ -130,6 +150,7 @@
 
       if (!rooms[index].booked) {
         rooms[index].booked = true;
+        rooms[index].bookedBy = currentUser;
         localStorage.setItem("rooms", JSON.stringify(rooms));
 
         const bookings = JSON.parse(localStorage.getItem("bookings")) || [];
@@ -141,11 +162,17 @@
         localStorage.setItem("bookings", JSON.stringify(bookings));
 
         alert(`✅ Room ${rooms[index].number} booked successfully!`);
-        loadRooms(); // Refresh list
+        loadRooms(); // Refresh
       }
     }
 
-    // Initial render
+    // Redirect to payment page
+    function goToPayment(roomNumber, price) {
+      localStorage.setItem("paymentRoom", JSON.stringify({ roomNumber, price }));
+      window.location.href = "payment.html";
+    }
+
+    // Initial load
     loadRooms();
   </script>
 </body>
